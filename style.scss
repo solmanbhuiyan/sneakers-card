@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  border-bottom: 1px solid rgb(63, 60, 60);
+  padding-bottom: 2rem;
+
+  &-l {
+    display: flex;
+    align-items: center;
+    & h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-right: 3rem;
+    }
+
+    & ul {
+      display: flex;
+      font-size: 2rem;
+      text-transform: capitalize;
+
+      & li {
+        padding: 2rem;
+        list-style: none;
+
+        & a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &-r {
+    display: flex;
+    align-items: center;
+
+    & .img-1 {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 2rem;
+    }
+
+    & .img-2 {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  margin-top: 8rem;
+
+  &-l {
+    flex-basis: calc(50% - 4rem);
+
+    & .mid-img {
+      margin-bottom: 3rem;
+
+      & img {
+        width: 100%;
+        border-radius: 2rem;
+      }
+    }
+
+    & .mid-imgs {
+      display: flex;
+      gap: 2rem;
+
+      & img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &-r {
+    flex-basis: calc(50% - 4rem);
+  }
+  &-text {
+    // font-size: 2rem;
+
+    & h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      color: rgb(207, 149, 41);
+    }
+    & h1 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      margin-bottom: 3rem;
+    }
+    & p {
+      font-size: 2rem;
+      line-height: 3rem;
+      color: rgb(65, 61, 61);
+      margin-bottom: 3rem;
+    }
+  }
+  &-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    & h1 {
+      font-size: 3rem;
+      padding: 0 2rem 0 0;
+    }
+    & span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgb(207, 149, 41);
+      background: rgb(212, 201, 179);
+      padding: 2px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+
+    & .button-1 {
+      padding: 0 2rem 0 0;
+
+      & button {
+        padding: 1rem 2rem;
+        border: none;
+      }
+
+      & i {
+        font-size: 2rem;
+      }
+
+      & span {
+        font-size: 2rem;
+        padding: 0 2rem;
+        font-weight: bold;
+      }
+    }
+
+    & .button-2 {
+      padding: 0 2rem 0 0;
+
+      & button {
+        padding: 1rem 2.5rem;
+        color: #fff;
+        background: rgb(209, 121, 6);
+        border: none;
+        border-radius: 1rem;
+      }
+      & i {
+        font-size: 2rem;
+        padding-right: 1.5rem;
+      }
+
+      & span {
+        font-size: 2rem;
+        // padding: 2rem;
+      }
+    }
+  }
+}
